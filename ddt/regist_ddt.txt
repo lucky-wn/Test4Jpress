@@ -1,0 +1,11 @@
+# 数据顺序:用户名,邮箱,密码,确认密码,验证码
+# 用户名为空
+ <%>autotest@126.com<%>autotest<%>autotest<%>1234<%>用户名不能为空
+# 邮箱为空
+auto_${random_string()}<%> <%>autotest<%>autotest<%>1234<%>邮箱不能为空
+# 密码为空
+auto_${random_string()}<%>autotest@126.com<%> <%>autotest<%>1234<%>密码不能为空
+# 确认密码为空
+auto_${random_string()}<%>autotest@126.com<%>autotest<%> <%>1234<%>确认密码不能为空
+# 验证码为空
+auto_${random_string()}<%>autotest@126.com<%>autotest<%>autotest<%> <%><%>验证1码不能为空
